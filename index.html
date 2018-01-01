@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audio</title>
+    
+    <style>
+        
+        body {
+             background: url(http://walops.com/wp-content/uploads/Dark-Forest-Moon-HD-Desktop-Background-Wallpaper.jpg);
+        }
+        .top {
+              margin-left: auto;
+              margin-right: auto;
+              position: relative;
+             height: 50px;
+              max-width: 600px;
+              width: 100%;
+              background-color: ;
+          }
+        
+        h4 {
+            
+            color: white;
+        }
+        
+        #current {
+                color: white;
+            
+        }
+        
+          .guide {
+              width: 100%;
+              height: 50px;
+              background-color: ;
+              
+          }
+          
+          .bold {
+              
+               margin-left: auto;
+              margin-right: auto;
+              position: relative;
+             height: 50px;
+              max-width: 600px;
+              width: 100%;
+              background-color: ;
+              text-align: center;
+              font-weight: bold;
+              font-size: 40px;
+              font-family: cursive;
+              font-style: italic;
+              margin-top:-50px;
+          }
+          
+          .art {
+              
+              height: 200px;
+              width: 200px;
+              margin-left: auto;
+              margin-right: auto;
+              background-color: ;
+              padding-top: 10px;
+              padding-bottom: 50px;
+              
+          }
+          
+
+          
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: ;
+  padding: 10px;
+}
+.grid-item {
+  background-color: ;
+  padding: 10px;
+    text-align: center;
+  
+}
+          
+        
+        h7 {
+            font-size: 17px;
+            color: white;
+    cursor: pointer;
+             font-style: italic;
+      text-decoration: underline;
+        }
+
+        
+.text {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color:;
+  padding: 10px;
+}
+.title {
+  background-color:;
+  padding: 10px;
+  font-size: 20px;
+    font-style: italic;
+    color: white;
+  text-align: left;
+}
+          
+.time {
+  background-color:;
+  padding: 12px;
+  font-size: 15px;
+    font-style: italic;
+    color: white;
+  text-align: right;
+}
+        
+        
+        .playing {
+             height: 40px;
+            width: 370px;
+            background: none;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        
+        #current {
+            color: white;
+        }
+        
+        .four {
+             height: 50px;
+            width: 370px;
+            background: ;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        
+        
+        
+        .control {
+            height: 50px;
+            width: 300px;
+            background: none;
+            margin-left: 0px;
+            margin-right: auto;
+            
+        }
+        
+/* SONG LIST BUTTONS */
+        
+        .music {
+            height: 80px;
+            width: 370px;
+            background: none;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+           
+            
+        }
+        
+         .music:hover {
+            height: 80px;
+            width: 370px;
+            background: black;
+             opacity: 0.2;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+             
+            
+        }
+        
+        .music1 {
+            height: 80px;
+            width: 370px;
+            background: none;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+          .music1:hover {
+            height: 80px;
+            width: 370px;
+            background: black;
+               opacity: 0.2;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+        .music2 {
+            height: 80px;
+            width: 370px;
+            background: none;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+         .music2:hover {
+            height: 80px;
+            width: 370px;
+            background: black;
+              opacity: 0.2;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+        .music3 {
+            height: 80px;
+            width: 370px;
+            background: none;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+        
+        .music3:hover {
+            height: 80px;
+            width: 370px;
+            background: black;
+              opacity: 0.2;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+        .music4 {
+            height: 80px;
+            width: 370px;
+            background: none;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+        
+        .music4:hover {
+            height: 80px;
+            width: 370px;
+            background: black;
+              opacity: 0.2;
+             margin-left: auto;
+              margin-right: auto;
+            cursor: pointer;
+        }
+        
+/* Controllers */
+        
+        #social {
+            position:absolute;
+          margin-top: 0px;
+            margin-left: auto;
+              margin-right: auto;
+        }
+      
+        #tiller {
+            position:absolute;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #uber {
+              position:absolute;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         
+        #black {
+              position:absolute;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #phone {
+            position:absolute;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        
+        .text1 {
+            
+            height: 100%;
+            width: 100%;
+        }
+        
+        
+    </style>
+    
+</head>
+
+<body>
+    <div class="guide">
+<div class="top">
+    
+    <div class="grid-container">
+        <div class="grid-item"><h7>Contact</h7></div>
+        <div class="grid-item"><h7>Music</h7></div>
+        <div class="grid-item"><h7>About</h7></div>
+    </div>
+        
+    </div>
+       
+            
+        
+    <div class="bold">
+        <h4>REVIVE</h4>
+        </div>
+    <div class="art">
+    
+        <img src="https://st2.depositphotos.com/1034372/10482/i/170/depositphotos_104822370-stock-photo-watercolor-handmade-red-green-cross.jpg" height=200 width=200>
+    </div>
+   
+<!--Now PLaying -->
+<div class="playing"><p1 id="current">Click Song to Play</p1></div>
+        
+<!--CONTROL PANEL-->
+
+<div class="four">
+        <div class="control">
+        <audio id="social" controls>     
+        <source src="social.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>  
+            
+            <audio id="tiller" controls>
+            <source src="tiller.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+            
+     <audio id="uber" controls>
+            <source src="uber.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>     
+            
+    <audio id="black" controls>
+            <source src="black.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>  
+            
+     <audio id="phone" controls>
+            <source src="phone.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>  
+            
+  </div>
+        
+    
+        </div>
+        
+        
+<!-- FIRST SONG -->
+        
+<div class="music" onclick="firstSong();
+                            playSocial();showSocialbar();
+                            hideTillerbar();hideUberbar();hideBlackbar();hidePhonebar();">
+
+    <div class="text">
+        <div class="title">1. Erase Your Social</div>
+        <div class="time">3:20</div>
+    </div>
+    
+        </div>
+        
+<!--SECOND SONG -->        
+
+   <div class="music1" onclick="secondSong();
+                                showTillerbar();playTiller();
+                                hideSocialbar();hideUberbar();hideBlackbar();hidePhonebar();">
+        
+     <div class="text">
+        <div class="title">2. 502 Come Up</div>
+        <div class="time">3:17</div>
+    </div>
+    </div>
+    
+        
+<!--THIRD SONG-->
+    <div class="music2" onclick="thirdSong();
+                                 showUberbar();playUber();
+                                 hidePhonebar();hideBlackbar();hideSocialBar(); hideTillerbar();">
+       
+         <div class="text">
+        <div class="title">3. Uber Everywhere</div>
+        <div class="time">2:23</div>
+    </div>
+        
+    </div>
+   
+
+<!--Fourth SONG-->
+    <div class="music3" onclick="fourthSong();
+                                showBlackbar();playBlack();
+                               hidePhonebar(); hideSocialBar();hideTillerbar();hideUberbar();">
+       
+         <div class="text">
+        <div class="title">4. Black Beatles</div>
+        <div class="time">4:51</div>
+    </div>
+        
+    </div>
+        
+        
+        <div class="music4" onclick="fifthSong();
+                                     showPhonebar();playPhone();">
+       
+         <div class="text">
+        <div class="title">5. Pick Up The Phone</div>
+        <div class="time">4:12</div>
+    </div>
+        
+    </div>
+        
+    
+<script>
+    
+    //Now Playing..
+    
+    function firstSong() {
+        
+        document.getElementById("current").innerHTML = "Now Playing...  Erase Your Social";
+    }
+    
+    function secondSong() {
+        
+        document.getElementById("current").innerHTML = "Now Playing...  502 Come Up";
+    }
+    
+     function thirdSong() {
+        
+        document.getElementById("current").innerHTML = "Now Playing...  Uber Everywhere";
+    }
+    
+     function fourthSong() {
+        
+        document.getElementById("current").innerHTML = "Now Playing...  Black Beatles";
+    }
+    
+    function fifthSong() {
+        
+        document.getElementById("current").innerHTML = "Now Playing...  Pick Up The Phone";
+    }
+    
+   //control bar appear
+    
+    var f = document.getElementById("social").style.visibility = "hidden";
+    
+    function showSocialbar() {
+        document.getElementById("social").style.visibility = "visible";
+    }
+    
+    function hideSocialbar() {
+        document.getElementById("social").style.visibility = "hidden";
+    }
+    
+    
+    
+    var g = document.getElementById("tiller").style.visibility = "hidden";
+    
+    function showTillerbar() {
+        document.getElementById("tiller").style.visibility = "visible";
+    }
+    
+     function hideTillerbar() {
+        document.getElementById("tiller").style.visibility = "hidden";
+    }
+    
+    
+     var h = document.getElementById("uber").style.visibility = "hidden";
+    
+    function showUberbar() {
+        document.getElementById("uber").style.visibility = "visible";
+    }
+    
+     function hideUberbar() {
+        document.getElementById("uber").style.visibility = "hidden";
+    }
+    
+    
+      var i = document.getElementById("black").style.visibility = "hidden";
+    
+    function showBlackbar() {
+        document.getElementById("black").style.visibility = "visible";
+    }
+    
+     function hideBlackbar() {
+        document.getElementById("black").style.visibility = "hidden";
+    }
+    
+    
+    var j = document.getElementById("phone").style.visibility = "hidden";
+    
+    function showPhonebar() {
+        document.getElementById("phone").style.visibility = "visible";
+    }
+    
+     function hidePhonebar() {
+        document.getElementById("phone").style.visibility = "hidden";
+    }
+    
+ //toggle change play/pause 
+    
+ var x = document.getElementById("social"); 
+  
+    function playSocial() {
+        x.play();
+        y.pause();
+        z.pause();
+         u.pause();
+        v.pause();
+        x.currentTime = 0
+        
+        
+}
+     
+   var y = document.getElementById("tiller"); 
+  
+     function playTiller() {
+        y.play();
+         x.pause();
+         z.pause();
+          u.pause();
+         v.pause();
+        y.currentTime = 0
+       
+}  
+  
+    
+    var z = document.getElementById("uber"); 
+
+     function playUber() {
+        z.play();
+         x.pause();
+         y.pause();
+         u.pause();
+         v.pause();
+          z.currentTime = 0
+}  
+  
+ var u = document.getElementById("black"); 
+
+     function playBlack() {
+        u.play();
+         x.pause();
+         y.pause();
+         z.pause();
+         v.pause();
+          u.currentTime = 0
+}  
+    
+    var v = document.getElementById("phone"); 
+
+     function playPhone() {
+        v.play();
+         x.pause();
+         y.pause();
+         z.pause();
+         u.pause();
+          v.currentTime = 0
+}  
+    
+    
+</script>
+    
+    
+        
+    
+    <script src="https://code.jquery.com/jquery2.2.0.js">
+    </script>
+        
+    
+    
+</body>
+</html>
