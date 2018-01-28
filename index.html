@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Audio</title>
+    <title>Collection LP</title>
     
     <style>
         
         body {
-             background: url(http://walops.com/wp-content/uploads/Dark-Forest-Moon-HD-Desktop-Background-Wallpaper.jpg);
+             background: url(forestback.jpg);
         }
         .top {
               margin-left: auto;
@@ -81,6 +81,8 @@
   
 }
           
+       
+        
         
         h7 {
             font-size: 17px;
@@ -90,6 +92,14 @@
       text-decoration: underline;
         }
 
+        
+            h7:hover {
+            font-size: 17px;
+            color: lightgray;
+    cursor: pointer;
+             font-style: italic;
+      
+        }
         
 .text {
   display: grid;
@@ -306,7 +316,10 @@
 <div class="top">
     
     <div class="grid-container">
-        <div class="grid-item"><h7>Contact</h7></div>
+        <div class="grid-item"><a href="contact.html">
+                                    <h7>Contact</h7>
+                                </a>
+        </div>
         <div class="grid-item"><h7>Music</h7></div>
         <div class="grid-item"><h7>About</h7></div>
     </div>
@@ -316,11 +329,11 @@
             
         
     <div class="bold">
-        <h4>REVIVE</h4>
+        <h4>Collection LP</h4>
         </div>
     <div class="art">
     
-        <img src="https://st2.depositphotos.com/1034372/10482/i/170/depositphotos_104822370-stock-photo-watercolor-handmade-red-green-cross.jpg" height=200 width=200>
+        <img src="cover.png" height=200 width=200>
     </div>
    
 <!--Now PLaying -->
@@ -331,27 +344,27 @@
 <div class="four">
         <div class="control">
         <audio id="social" controls>     
-        <source src="social.mp3" type="audio/mp3">
+        <source src="Memories-LANDR.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>  
             
             <audio id="tiller" controls>
-            <source src="tiller.mp3" type="audio/mp3">
+            <source src="Want-LANDR.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
             
      <audio id="uber" controls>
-            <source src="uber.mp3" type="audio/mp3">
+            <source src="Long-LANDR.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>     
             
     <audio id="black" controls>
-            <source src="black.mp3" type="audio/mp3">
+            <source src="Late-LANDR.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>  
             
      <audio id="phone" controls>
-            <source src="phone.mp3" type="audio/mp3">
+            <source src="You-LANDR.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>  
             
@@ -368,8 +381,8 @@
                             hideTillerbar();hideUberbar();hideBlackbar();hidePhonebar();">
 
     <div class="text">
-        <div class="title">1. Erase Your Social</div>
-        <div class="time">3:20</div>
+        <div class="title">1. Memories</div>
+        <div class="time">1:56</div>
     </div>
     
         </div>
@@ -381,8 +394,8 @@
                                 hideSocialbar();hideUberbar();hideBlackbar();hidePhonebar();">
         
      <div class="text">
-        <div class="title">2. 502 Come Up</div>
-        <div class="time">3:17</div>
+        <div class="title">2. All I Want</div>
+        <div class="time">1:15</div>
     </div>
     </div>
     
@@ -393,8 +406,8 @@
                                  hidePhonebar();hideBlackbar();hideSocialBar(); hideTillerbar();">
        
          <div class="text">
-        <div class="title">3. Uber Everywhere</div>
-        <div class="time">2:23</div>
+        <div class="title">3. Wrong</div>
+        <div class="time">1:49</div>
     </div>
         
     </div>
@@ -406,8 +419,8 @@
                                hidePhonebar(); hideSocialBar();hideTillerbar();hideUberbar();">
        
          <div class="text">
-        <div class="title">4. Black Beatles</div>
-        <div class="time">4:51</div>
+        <div class="title">4. Too Late</div>
+        <div class="time">1:10</div>
     </div>
         
     </div>
@@ -417,8 +430,8 @@
                                      showPhonebar();playPhone();">
        
          <div class="text">
-        <div class="title">5. Pick Up The Phone</div>
-        <div class="time">4:12</div>
+        <div class="title">5. Like You</div>
+        <div class="time">1:34</div>
     </div>
         
     </div>
@@ -430,27 +443,27 @@
     
     function firstSong() {
         
-        document.getElementById("current").innerHTML = "Now Playing...  Erase Your Social";
+        document.getElementById("current").innerHTML = "Now Playing...  Memories";
     }
     
     function secondSong() {
         
-        document.getElementById("current").innerHTML = "Now Playing...  502 Come Up";
+        document.getElementById("current").innerHTML = "Now Playing...  All I Want";
     }
     
      function thirdSong() {
         
-        document.getElementById("current").innerHTML = "Now Playing...  Uber Everywhere";
+        document.getElementById("current").innerHTML = "Now Playing...  Wrong";
     }
     
      function fourthSong() {
         
-        document.getElementById("current").innerHTML = "Now Playing...  Black Beatles";
+        document.getElementById("current").innerHTML = "Now Playing...  Too Late";
     }
     
     function fifthSong() {
         
-        document.getElementById("current").innerHTML = "Now Playing...  Pick Up The Phone";
+        document.getElementById("current").innerHTML = "Now Playing...  Like You";
     }
     
    //control bar appear
