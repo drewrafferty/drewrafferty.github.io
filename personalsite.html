@@ -2,14 +2,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Drew Rafferty - About</title>
+    <title>Drew Rafferty - Projects</title>
     <link rel="icon" href="namelogo.png">
-   <link rel = "stylesheet" type = "text/css" href = "fontsheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300&display=swap" rel="stylesheet">
 </head>
 
     <!-------- CSS --------->
 <style>
     
+
 
 #nav-icon2 {
   width: 40px;
@@ -27,6 +29,8 @@
   cursor: pointer;
     margin-top: 60px;
 }
+
+/* Icon 2 */
 
 #nav-icon2 {
 }
@@ -197,7 +201,7 @@
  body {
         margin: 0px;
         padding: 0px;
-         font-family: 'Muli', sans-serif;
+        font-family: 'Muli', sans-serif;
     }
     
     .container {
@@ -249,7 +253,7 @@
          margin-right: auto;
         margin-left: auto;
         font-family: 'Dosis', sans-serif;
-       
+        font-style: thin;
     }
     
     
@@ -282,13 +286,10 @@ box-shadow:0 0 8px lightgray;
         font-size: 25px;
         font-style: bold;
          margin-left: 20px;
+      
       padding-bottom: 5px;
+       
             
-    }
-    
-     #overview {
-        border-bottom: 4px solid #D9D2E9;
-        width: 150px;
     }
     h3 {
         font-size: 16px;
@@ -404,31 +405,11 @@ box-shadow:0 0 8px lightgray;
         margin-top: 30px;
     }
     
-    
     .box:hover {
         color: dodgerblue;
         border: 1px solid dodgerblue;
         cursor: pointer;
     }
-    
-    
-     .box1 {
-        border: 1px solid lightgray;
-        width: 80%;
-        border-radius: 3px;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-       padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 15px;
-        transition: .2s;
-        -webkit-box-shadow:0 0 px lightgray; 
--moz-box-shadow: 0 0 8px lightgray; 
-box-shadow:0 0 8px lightgray;
-        margin-top: 30px;
-    }
-    
     .left {
         width: 20%;
         
@@ -444,18 +425,8 @@ box-shadow:0 0 8px lightgray;
        
     }
     
-    .right1 {
-        width: 80%;
-        float: right;
-        
-        margin-top: -60px;
-       
-    }
-   
-    
     @media (max-width: 600px) {
         .right {float: none; margin-top: 10px;width: 100%; padding:10px;}
-        .right1 {float: none; margin-top: 10px;width: 100%; padding:10px;}
         .left {float: none; margin-right: auto; margin-left:auto;}
     }
     h12 {
@@ -487,14 +458,58 @@ box-shadow:0 0 8px lightgray;
         height: 10px;
     }
     
-    .pad {
-        height: 40px;
+    
+    .code-box {
+        
+        height:400px;
+        width:80%;
+        border:1px solid #ccc;
+        font:16px/26px Georgia, Garamond, Serif;
+        overflow:auto;
+        margin-left: auto;
+        margin-right: auto;
+       background: black;
+        font-family: 'Muli', sans-serif;
+        color: forestgreen;
     }
     
-    #first {
-        margin-top: -20px;
+    
+    .bar {
+        width: 80.5%;
+        height: 20px;
+        background-color: lightgray;
+        margin-right: auto;
+        margin-left: auto;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
-   
+    
+    .circle {
+        height: 12px;
+        width: 12px;
+        border-radius: 10px;
+        float: left;
+        margin-right:8px;
+        margin-top: 4px;
+    }
+    
+    #red {
+        background: red;
+        margin-left: 15px;
+    }
+    
+    #yellow {
+        background: gold;
+    }
+    #green {
+        background: green;
+    }
+    
+    h3 {
+        font-weight: bold;
+        padding-top: 20px;
+        
+    }
     
 </style>
     
@@ -513,16 +528,16 @@ box-shadow:0 0 8px lightgray;
         
             <ul id="horizontal">
                 
-                <li><a href="#" id="active">about</a></li>
+                <li><a href="index.html" >about</a></li>
                  <li><a href="experience.html">experience</a></li>
-                 <li><a href="projects.html">projects</a></li>
+                 <li><a href="projects.html"id="active">projects</a></li>
                  <li><a href="contact.html">contact</a></li>
             </ul>
         
         
         
         </div>
-       <div class="button" onclick="myFunction()">
+<div class="button" onclick="myFunction()">
 <div id="nav-icon2">
   <span></span>
   <span></span>
@@ -534,9 +549,9 @@ box-shadow:0 0 8px lightgray;
         <div class="menu-list" id="menu-list">
   <ul id="vertical">
                
-                <li><a href="#" id="active">about</a></li>
+                <li><a href="index.html">about</a></li>
                  <li><a href="experience.html">experience</a></li>
-                 <li><a href="projects.html">projects</a></li>
+                 <li><a href="projects.html"id="active">projects</a></li>
                  <li><a href="contact.html">contact</a></li>
             </ul>
 </div>
@@ -550,107 +565,10 @@ box-shadow:0 0 8px lightgray;
     
     <div class="title-section">DREW RAFFERTY</div>
     <div class="about">
-    <h1>about</h1>
-    <h2>Bio</h2>
-    <h3>I am currently a Junior MIS (Management Information Systems) major with a Finance concentration at the University of Delaware. A majority of my professional experience is in front-end development and data analytics. I attended a small liberal arts college where I pursued a major in Computer Science and partcipated in collegiate athletics before transferring to UD.
-        <br>
-        <br>
-        This site will serve as a general showcase of some of the projects I've been working on as well as a quick glance at my experience and portfolio. The information on the site will be updated regularly to make sure my latest changes will be public and recent.   </h3>
-   
-     <h2 id="overview">Overview</h2>
-        <h2>Work</h2>
-          <a class="box-link" href="experience.html#az">
-<div class="box">
-        <div class="left">
-        <img src="small-az.jpg" id="icon" height="60" width="60">
-        </div>
-     <div class="right1">
-        <h12>AstraZeneca</h12><h14>Summer 2019</h14>
-        <br>
-         <div class="space"></div>
-         <h13> Finance Technical Operations Intern</h13>
-        </div>
-      </div>  
-        </a>
-         <a class="box-link" href="experience.html#ud">
-<div class="box">
-        <div class="left">
-        <img src="ud.jfif" id="icon" height="60" width="60">
-        </div>
-     <div class="right1">
-        <h12>University of Delaware</h12><h14>Fall 2018</h14>
-        <br>
-         <div class="space"></div>
-         <h13>IT Client Support</h13>
-        </div>
-      </div>  
-        </a>
+    <h1>projects</h1>
         
-         <a class="box-link" href="experience.html#sc">
-<div class="box">
-        <div class="left">
-        <img src="sc.png" id="icon" height="60" width="80">
-        </div>
-     <div class="right1">
-        <h12>SouthCo</h12><h14>Summer 2015</h14>
-        <br>
-         <div class="space"></div>
-         <h13>Operations Externship</h13>
-        </div>
-      </div>  
-        </a>
-  <div class="pad"></div>
-
-<h2 id="first">Code</h2>
-        
-         <a class="box-link" href="code.html">
-<div class="box">
-        <div class="left">
-        <img src="code.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>Code Snippets</h12><h14>Present</h14>
-        <br>
-         <div class="space"></div>
-         <h13> Some of my smaller bits of source code</h13>
-        </div>
-      </div>  
-        </a>
-
-<h2>Projects</h2>
-        
-        
-         <a class="box-link" href="music.html"  target="_blank">
-<div class="box">
-        <div class="left">
-        <img src="music.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>Secure Audio Ecommerce </h12><h14>Present</h14>
-        <br>
-         <div class="space"></div>
-         <h13> Custom platform for .wav &amp; .mp3 file transactions</h13>
-        </div>
-      </div>  
-        </a>
-
-        
-         <a class="box-link" href="portal.html" target="_blank">
-<div class="box">
-        <div class="left">
-        <img src="portal.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>Portal Desktop App</h12><h14>2019</h14>
-        <br>
-         <div class="space"></div>
-         <h13> Student toolkit and organizational planner using Electron &amp; Node.js</h13>
-        </div>
-      </div>  
-        </a>
-        
-        
-         <a class="box-link" href="code.html#pw">
+    <h2>Code Snippets</h2>    
+         <a class="box-link" href="index.html">
 <div class="box">
         <div class="left">
         <img src="namelogo.png" id="icon" height="70" width="70">
@@ -663,81 +581,258 @@ box-shadow:0 0 8px lightgray;
         </div>
       </div>  
         </a>
+
         
-        
-         <a class="box-link" href="code.html#player">
-<div class="box">
-        <div class="left">
-        <img src="web_player.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>Audio Web Player</h12><h14>2016</h14>
-        <br>
-         <div class="space"></div>
-         <h13> Open-source embedded music playlist</h13>
-        </div>
-      </div>  
-        </a>
-        
-       
-        <h2>Skills</h2>
-        
-       
-<div class="box1">
-        <div class="left">
-        <img src="dev.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>Web Development</h12><h14></h14>
-        <br>
-         <div class="space"></div>
-         <h13>html5 &middot; css3 &middot; javascript &middot; Adobe Dreamweaver</h13>
-        </div>
-      </div>  
-     
-        
-       
-<div class="box1">
-        <div class="left">
-        <img src="sketch.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>UI / UX Design</h12><h14></h14>
-        <br>
-         <div class="space"></div>
-         <h13>Adobe Illustrator &middot; Sketch </h13>
-        </div>
-      </div>  
-      
+<!---- CODE NAV BAR ---->
+<h3 style="font-weight: bold;">Mobile Nav Bar</h3>
+
+<div class="bar">
+<div class="circle" id="red"></div>        
+ <div class="circle" id="yellow"></div>      
+    <div class="circle" id="green"></div>      
+</div>
+
+<div class="code-box">
+            
+ <pre>
+ //// HTML ////
+ 
+ &lt;div class="button" 
+ onclick="myFunction()">&lt;/div&gt;
+ &lt;div id="nav-icon">
+  &lt;span>&lt;/span>
+  &lt;span>&lt;/span>
+  &lt;span>&lt;/span>
+&lt;/div>
+&lt;/div>    
+        &lt;div class="menu-list" id="menu-list">
+  &lt;ul id="vertical">     
+    &lt;li>&lt;a href="index.html">about&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="experience.html">experience&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="projects.html"id="active">projects&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="contact.html">contact&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+ 
+///// CSS /////
+
+#nav-icon {
+  width: 40px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+    margin-top: 60px;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+    #nav-icon span:nth-child(1){
+        top: 5px;
+    }
+    #nav-icon span:nth-child(2) {
+  top: 16px;
+  }
+ #nav-icon span:nth-child(3){
+        top: 28px;
+        }
+#nav-icon.open span:nth-child(1){
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#nav-icon.open span:nth-child(1) {
+  left: 0px;
+  top: 22px;
+}
+#nav-icon.open span:nth-child(2) {
+  left: 0px;
+  top: 22px;
+}
+#nav-icon.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+     .button {
+         height: 50px;
+        width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+        margin-top: -40px;     
+    }  
+#vertical {
+         list-style-type: none;
+        margin-left: -40px;
+    }
+    #vertical li {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+         border-bottom: 2px solid black;
+        width: 120px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #vertical li a{
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition:.2s;  
+    }
+ #vertical li a:hover{
+        color: #D9D2E9;     
+    }
+    .menu-list {
+        display: none;
+        height: 200px;
+        width: 200px;
+    
+        margin-right: auto;
+        margin-left: auto;
+    } 
+    @media (max-width:700px) {
+        .button {
+            display: block;
+        }
+        .menu-nav {
+            display: none;
+        }
+    }
+//// JAVASCRIPT ////
+
+ function myFunction() {
+  var x = document.getElementById("menu-list");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ </pre>
+</div>
   
+<!----  FLEX BOX ---->
         
-<div class="box1">
-        <div class="left">
-        <img src="sql.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>Data Analytics</h12><h14></h14>
-        <br>
-         <div class="space"></div>
-         <h13>SQL &middot; Microsoft Access &amp; Excel</h13>
-        </div>
-      </div>  
+<h3 style="font-weight: bold;">Grid Box</h3>
+
+<div class="bar">
+<div class="circle" id="red"></div>        
+ <div class="circle" id="yellow"></div>      
+    <div class="circle" id="green"></div>      
+</div>
         
+<div class="code-box">
+<pre>
+//// HTML ////
+&lt;a class="box-link" href="index.html">
+&lt;div class="box">
+        &lt;div class="left">
+        &lt;img src="namelogo.png" id="icon" height="70" width="70">
+        &lt;/div>
+     &lt;div class="right">
+        &lt;h12>Personal Website&lt;/h12>&lt;h14>2018&lt;/h14>
+        &lt;br>
+         &lt;div class="space">&lt;/div>
+         &lt;h13> Built with html5 &middot; css3 &middot; javascript&lt;/h13>
+        &lt;/div>
+      &lt;/div>  
+        &lt;/a>
         
+//// CSS ////
+
+     .box {
+        border: 1px solid lightgray;
+        width: 80%;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+       padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        transition: .2s;
+        -webkit-box-shadow:0 0 px lightgray; 
+-moz-box-shadow: 0 0 8px lightgray; 
+box-shadow:0 0 8px lightgray;
+        margin-top: 30px;
+    }
+    
+    .box:hover {
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+        cursor: pointer;
+    }
+    .left {
+        width: 20%;
+        text-align: center;
+    }
+    .right {
+        width: 80%;
+        float: right;
+        margin-top: -65px;
+    }
+    @media (max-width: 600px) {
+        .right {float: none; margin-top: 10px;
+        width: 100%; padding:10px;}
+        .left {float: none; margin-right: auto;
+        margin-left:auto;}
+    }
+    h12 {
+        font-size: 18px;
+        font-weight: 800; 
+    }
+    h13 {
+        font-size: 15px;
+        font-weight: 550;
+       opacity: 0.5;
+    }
+    h14 {
+        font-size: 14px;
+        float: right;
+        opacity: 0.5;
+    }
+    .box-link {
+        text-decoration: none;
+        color: black;
         
-<div class="box1">
-        <div class="left">
-        <img src="graph.png" id="icon" height="70" width="70">
-        </div>
-     <div class="right">
-        <h12>Data Visualization</h12><h14></h14>
-        <br>
-         <div class="space"></div>
-         <h13>MicroStrategy &middot; Tableau</h13>
-        </div>
-      </div>  
-       
-        
+    }
+
+</pre>        
+</div>
         
     </div>
     
@@ -746,11 +841,11 @@ box-shadow:0 0 8px lightgray;
       <div class="links">
       <a href="mailto:drafferty44@gmail.com">Email</a>
           &middot;
-          <a href="https:/github.com">Github</a>
+          <a href="https:/github.io">Github</a>
           &middot;
-          <a href="https://udel.joinhandshake.com/login">Handshake</a>
+          <a href="#">Handshake</a>
           &middot;
-          <a href="music.html" target="_blank">Music</a>
+          <a href="#">Music</a>
       
       </div>
       <div class="copyright">&copy; Drew Rafferty 2019</div>

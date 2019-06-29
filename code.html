@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drew Rafferty - Code</title>
+    <link rel="icon" href="namelogo.png">
+   <link rel = "stylesheet" type = "text/css" href = "fontsheet.css" />
+</head>
+
+    <!-------- CSS --------->
+<style>
+
+    
+#nav-icon2 {
+  width: 40px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+    margin-top: 60px;
+}
+
+/* Icon 2 */
+
+#nav-icon2 {
+}
+
+#nav-icon2 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
+    #nav-icon2 span:nth-child(1){
+        top: 5px;
+    }
+    
+    #nav-icon2 span:nth-child(2) {
+  top: 16px;
+}
+
+    #nav-icon2 span:nth-child(3){
+        top: 28px;
+    }
+
+#nav-icon2.open span:nth-child(1){
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon2.open span:nth-child(1) {
+  left: 0px;
+  top: 22px;
+}
+
+#nav-icon2.open span:nth-child(2) {
+  left: 0px;
+  top: 22px;
+}
+
+#nav-icon2.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+    
+    
+     .button {
+         height: 50px;
+        width: 70px;
+        
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+        margin-top: -40px;
+       
+    }
+    
+    
+        
+/******** DESKTOP MENU *******/
+    
+    #horizontal { 
+    list-style-type: none;
+  margin-left: auto;
+        margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+        
+        width: 500px;
+      
+  
+    }
+    
+   #horizontal li {
+        float: left;
+       margin-left: 10px;
+    }
+   #horizontal li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding-left: 25px;
+       padding-right: 25px;
+        padding-bottom: 8px;
+  text-decoration: none;
+        transition: .2s;
+       font-size: 17px;
+}
+
+#horizontal li a:hover {
+  border-bottom: 2px solid #D9D2E9;
+    
+}
+
+    
+/******** MOBILE MENU **********/
+    
+    #vertical {
+         list-style-type: none;
+        margin-left: -40px;
+    }
+    
+    #vertical li {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+         border-bottom: 2px solid black;
+        width: 120px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #vertical li a{
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition:.2s;
+       
+    }
+ #vertical li a:hover{
+        color: #D9D2E9;
+       
+       
+    }
+  
+  
+    .menu-list {
+        display: none;
+        height: 200px;
+        width: 200px;
+    
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    @media (max-width:700px) {
+        .button {
+            display: block;
+        }
+        .menu-nav {
+            display: none;
+        }
+    }
+    /*************** MAIN ***************/
+
+ body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Muli", sans-serif;
+    }
+    
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 800px;
+       
+        height: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: -10;
+    }
+    
+    .header {
+        
+        width: 100%;
+       
+    }
+    
+    .logo-bar {
+        height: 80px;
+        width: 320px;
+        padding-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding-bottom: 20px;
+       
+    }
+    
+    
+    .menu-nav {
+        height: 40px;
+        width: 500px;
+       
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    
+    .title-section {
+        width: 90%;
+       
+        margin-top: 10px;
+      text-align: center;
+        font-size: 80px;
+         margin-right: auto;
+        margin-left: auto;
+        font-family: 'Dosis';
+       
+    }
+    
+    
+    @media (max-width: 500px) {
+        .title-section {font-size: 50px}
+    }
+    
+    .about {
+        width: 95%; 
+       padding-bottom: 40px;
+        margin-top: 40px;
+        -webkit-box-shadow:0 0 8px lightgray; 
+-moz-box-shadow: 0 0 8px lightgray; 
+box-shadow:0 0 8px lightgray;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+  
+    h1 {
+        padding-top: 40px;
+        margin-left: 20px;
+        font-size: 35px;
+        border-bottom: 4px solid #D9D2E9;
+        padding-bottom: 10px;
+        width: 150px;
+    }
+    h2 {
+        padding-top: 15px;
+        font-size: 25px;
+        font-style: bold;
+         margin-left: 20px;
+      
+      padding-bottom: 5px;
+       
+            
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 28px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        font-weight: 100;
+        padding-right: 10px;
+    }
+   
+    
+    .text {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid gray;
+        border-radius: 8px;
+        transition: .2s;
+        margin-top: 20px;
+         border: 2px solid #D9D2E9;
+      -webkit-box-shadow:0 0 10px #D9D2E9; 
+-moz-box-shadow: 0 0 10px #D9D2E9; 
+box-shadow:0 0 10px #D9D2E9;
+       
+    }
+    
+    
+    h4 {
+        font-size: 20px;
+        margin-left: 20px;
+      
+    }
+    
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    
+    h6 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 20px;
+     margin-top: -15px;
+        font-weight: 100;
+        padding-right: 10px;
+    }
+    
+    .date {
+        font-size: 14px;
+        float: right;
+        padding-right: 20px;
+        font-weight: 700;
+    }
+    
+    @media (max-width: 520px) {
+        .date {
+            float:none;
+             padding-left: 20px;
+        }
+    }
+    
+    #active {
+        border-bottom:2px solid #D9D2E9;
+    }
+  
+    
+    /******* FOOTER *************/
+    
+    .footer {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0;
+        text-align: center;
+      
+        margin-top: 40px;
+         text-decoration: none;
+        padding-bottom: 20px;
+    }
+    
+    .links a{
+         text-decoration: none;
+        font-size: 16px;
+        color: gray;
+        transition: .2s;
+       
+    }
+    .links a:hover {
+        text-decoration: underline;
+        color: dodgerblue;
+    }
+    
+    .copyright {
+        margin-top: 10px;
+        font-size: 15px;
+        color: gray;
+    }
+    
+     .box {
+        border: 1px solid lightgray;
+        width: 80%;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+       padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        transition: .2s;
+        -webkit-box-shadow:0 0 px lightgray; 
+-moz-box-shadow: 0 0 8px lightgray; 
+box-shadow:0 0 8px lightgray;
+        margin-top: 30px;
+    }
+    
+    .box:hover {
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+        cursor: pointer;
+    }
+    .left {
+        width: 20%;
+        
+        text-align: center;
+        
+        
+    }
+    .right {
+        width: 80%;
+        float: right;
+        
+        margin-top: -65px;
+       
+    }
+    
+    @media (max-width: 600px) {
+        .right {float: none; margin-top: 10px;width: 100%; padding:10px;}
+        .left {float: none; margin-right: auto; margin-left:auto;}
+    }
+    h12 {
+        font-size: 18px;
+        font-weight: 800;
+        
+        
+    }
+    h13 {
+        font-size: 15px;
+        font-weight: 550;
+       opacity: 0.5;
+        
+    }
+    h14 {
+        font-size: 14px;
+        float: right;
+        opacity: 0.5;
+        
+    }
+    
+    .box-link {
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .space {
+        height: 10px;
+    }
+    
+    
+    .code-box {
+        
+        height:400px;
+        width:80%;
+        border:1px solid #ccc;
+        font:16px/26px Georgia, Garamond, Serif;
+        overflow:auto;
+        margin-left: auto;
+        margin-right: auto;
+       background: black;
+        font-family: 'Muli';
+        color: forestgreen;
+    }
+    
+    
+    .bar {
+        width: 80.5%;
+        height: 20px;
+        background-color: lightgray;
+        margin-right: auto;
+        margin-left: auto;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .circle {
+        height: 12px;
+        width: 12px;
+        border-radius: 10px;
+        float: left;
+        margin-right:8px;
+        margin-top: 4px;
+    }
+    
+    #red {
+        background: red;
+        margin-left: 15px;
+    }
+    
+    #yellow {
+        background: gold;
+    }
+    #green {
+        background: limegreen;
+    }
+    
+    h3 {
+        font-weight: bold;
+        padding-top: 20px;
+        
+    }
+    
+</style>
+    
+    
+    
+    <!-------- HTML --------->
+<body>
+    
+<div class="container">
+    
+    
+    <div class="header">
+    
+        <div class="logo-bar"><img src="namelogo.png" id="logo"height="80" width="80"></div>
+        <div class="menu-nav">
+        
+            <ul id="horizontal">
+                
+                <li><a href="index.html" >about</a></li>
+                 <li><a href="experience.html">experience</a></li>
+                 <li><a href="projects.html"id="active">projects</a></li>
+                 <li><a href="contact.html">contact</a></li>
+            </ul>
+        
+        
+        
+        </div>
+<div class="button" onclick="myFunction()">
+<div id="nav-icon2">
+  <span></span>
+  <span></span>
+  <span></span>
+ 
+</div>
+</div>
+        
+        <div class="menu-list" id="menu-list">
+  <ul id="vertical">
+               
+                <li><a href="index.html">about</a></li>
+                 <li><a href="experience.html">experience</a></li>
+                 <li><a href="projects.html"id="active">projects</a></li>
+                 <li><a href="contact.html">contact</a></li>
+            </ul>
+</div>
+
+        
+    </div>
+    
+    
+<!-- BODY --->
+    
+    
+    <div class="title-section">DREW RAFFERTY</div>
+    <div class="about">
+    <h1>projects</h1>
+        
+    <h2 id="pw">Code Snippets</h2>    
+         <a class="box-link" href="index.html">
+<div class="box">
+        <div class="left">
+        <img src="namelogo.png" id="icon" height="70" width="70">
+        </div>
+     <div class="right">
+        <h12>Personal Website</h12><h14>2018</h14>
+        <br>
+         <div class="space"></div>
+         <h13> Built with html5 &middot; css3 &middot; javascript</h13>
+        </div>
+      </div>  
+        </a>
+
+        
+<!---- CODE NAV BAR ---->
+<h3 style="font-weight: bold;">Mobile Nav Bar</h3>
+
+<div class="bar">
+<div class="circle" id="red"></div>        
+ <div class="circle" id="yellow"></div>      
+    <div class="circle" id="green"></div>      
+</div>
+
+<div class="code-box">
+            
+ <pre>
+ //// JAVASCRIPT ////
+
+ function myFunction() {
+  var x = document.getElementById("menu-list");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+ //// HTML ////
+ 
+ &lt;div class="button" 
+ onclick="myFunction()">&lt;/div&gt;
+ &lt;div id="nav-icon">
+  &lt;span>&lt;/span>
+  &lt;span>&lt;/span>
+  &lt;span>&lt;/span>
+&lt;/div>
+&lt;/div>    
+        &lt;div class="menu-list" id="menu-list">
+  &lt;ul id="vertical">     
+    &lt;li>&lt;a href="index.html">about&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="experience.html">experience&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="projects.html"id="active">projects&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="contact.html">contact&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+ 
+///// CSS /////
+
+#nav-icon {
+  width: 40px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+    margin-top: 60px;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+    #nav-icon span:nth-child(1){
+        top: 5px;
+    }
+    #nav-icon span:nth-child(2) {
+  top: 16px;
+  }
+ #nav-icon span:nth-child(3){
+        top: 28px;
+        }
+#nav-icon.open span:nth-child(1){
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#nav-icon.open span:nth-child(1) {
+  left: 0px;
+  top: 22px;
+}
+#nav-icon.open span:nth-child(2) {
+  left: 0px;
+  top: 22px;
+}
+#nav-icon.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+     .button {
+         height: 50px;
+        width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+        margin-top: -40px;     
+    }  
+#vertical {
+         list-style-type: none;
+        margin-left: -40px;
+    }
+    #vertical li {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+         border-bottom: 2px solid black;
+        width: 120px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #vertical li a{
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition:.2s;  
+    }
+ #vertical li a:hover{
+        color: #D9D2E9;     
+    }
+    .menu-list {
+        display: none;
+        height: 200px;
+        width: 200px;
+    
+        margin-right: auto;
+        margin-left: auto;
+    } 
+    @media (max-width:700px) {
+        .button {
+            display: block;
+        }
+        .menu-nav {
+            display: none;
+        }
+    }
+
+ </pre>
+</div>
+  
+<!----  FLEX BOX ---->
+        
+<h3 style="font-weight: bold;">Responsive Content Box</h3>
+
+<div class="bar">
+<div class="circle" id="red"></div>        
+ <div class="circle" id="yellow"></div>      
+    <div class="circle" id="green"></div>      
+</div>
+        
+<div class="code-box">
+<pre>
+//// HTML ////
+&lt;a class="box-link" href="index.html">
+&lt;div class="box">
+        &lt;div class="left">
+        &lt;img src="namelogo.png" id="icon" height="70" width="70">
+        &lt;/div>
+     &lt;div class="right">
+        &lt;h12>Personal Website&lt;/h12>&lt;h14>2018&lt;/h14>
+        &lt;br>
+         &lt;div class="space">&lt;/div>
+         &lt;h13> Built with html5 &middot; css3 &middot; javascript&lt;/h13>
+        &lt;/div>
+      &lt;/div>  
+        &lt;/a>
+        
+//// CSS ////
+
+     .box {
+        border: 1px solid lightgray;
+        width: 80%;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+       padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        transition: .2s;
+        -webkit-box-shadow:0 0 px lightgray; 
+-moz-box-shadow: 0 0 8px lightgray; 
+box-shadow:0 0 8px lightgray;
+        margin-top: 30px;
+    }
+    
+    .box:hover {
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+        cursor: pointer;
+    }
+    .left {
+        width: 20%;
+        text-align: center;
+    }
+    .right {
+        width: 80%;
+        float: right;
+        margin-top: -65px;
+    }
+    @media (max-width: 600px) {
+        .right {float: none; margin-top: 10px;
+        width: 100%; padding:10px;}
+        .left {float: none; margin-right: auto;
+        margin-left:auto;}
+    }
+    h12 {
+        font-size: 18px;
+        font-weight: 800; 
+    }
+    h13 {
+        font-size: 15px;
+        font-weight: 550;
+       opacity: 0.5;
+    }
+    h14 {
+        font-size: 14px;
+        float: right;
+        opacity: 0.5;
+    }
+    .box-link {
+        text-decoration: none;
+        color: black;
+        
+    }
+
+</pre>        
+</div>
+<h3 style="font-weight: bold; font-size: 25px; padding-bottom: 0px;">Portal</h3>
+        
+         <a class="box-link" href="portal.html" target="_blank">
+<div class="box">
+        <div class="left">
+        <img src="portal.png" id="icon" height="70" width="70">
+        </div>
+     <div class="right">
+        <h12>Portal Desktop App</h12><h14>2019</h14>
+        <br>
+         <div class="space"></div>
+         <h13> Student toolkit and organizational planner  using Electron &amp; Node.js</h13>
+        </div>
+      </div>  
+        </a>
+        
+        
+<h3 style="font-weight: bold;">GPA Calculator .js Framework</h3>
+        
+        <div class="bar">
+<div class="circle" id="red"></div>        
+ <div class="circle" id="yellow"></div>      
+    <div class="circle" id="green"></div>      
+</div>
+        
+        <div class="code-box">
+        <pre>
+//// JAVASCRIPT ////
+var $outer = $('.outer-box');
+var $gpa = $('#gpa');
+var $result = $('.result').hide();
+
+$('.btn').click(function() {
+  $('.block').last().clone().children().val("").parent().appendTo($('.inner-box'));
+});
+
+$outer.on('keyup', '.units', function() {
+  $gpa.text(getTotal());
+});
+
+$outer.on("change", ".grade-select", function() {
+  $gpa.text(getTotal());
+  $result.is(":hidden") && $result.show();
+});
+
+function getTotal() {
+  var gradeTotal = 0;
+  var sum = 0;
+  $(".units").each(function() {
+    var $this = $(this);
+    if(!isNaN($this.val()) && !isNaN($this.parent().find('.grade-select').val())) {
+      sum += parseFloat($this.val() || 0) * parseFloat($this.parent().find('.grade-select').val() || 0);
+      gradeTotal += parseFloat($this.val() || 0)
+    }
+  });
+  return  (sum/gradeTotal).toFixed(2);
+}
+
+$(".btn").on("click", function () {
+  
+    $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+    return false;
+});
+
+//// HTML ////
+
+&lt;div class='outer-box'>
+    &lt;div class='inner-box'>
+      &lt;p id="class-name">Course&lt;/p>
+      &lt;form class='block'>
+        &lt;input type="text" class='course' placeholder="Course Name">
+        &lt;label>Units&lt;/label>
+        &lt;input type="text" class='units'>
+        &lt;label>Grade&lt;/label>
+        &lt;select class='grade-select'>
+          &lt;option value="">Select&lt;/option>
+          &lt;option value="4.0">A+&lt;/option>
+          &lt;option value="4.0">A&lt;/option>
+          &lt;option value="3.7">A-&lt;/option>
+          &lt;option value="3.3">B+&lt;/option>
+          &lt;option value="3.0">B&lt;/option>
+          &lt;option value="2.7">B-&lt;/option>
+          &lt;option value="2.3">C+&lt;/option>
+          &lt;option value="2.0">C&lt;/option>
+          &lt;option value="1.7">C-&lt;/option>
+          &lt;option value="1.0">D&lt;/option>
+          &lt;option value="0.0">F&lt;/option>
+        &lt;/select>
+      &lt;/form>
+    &lt;/div>
+
+    &lt;div class='btn btn-default'>+ Add Course&lt;/div>
+    &lt;div class='result'>
+      &lt;h3 id="gpa">GPA&lt;/h3>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class='spacer'>&lt;/div>
+        </pre>
+        </div>
+        
+<h3 style="font-weight: bold; font-size: 25px; padding-bottom: 0px;"  id="player">Audio Player</h3>
+        
+           <a class="box-link" href="index.html">
+<div class="box">
+        <div class="left">
+        <img src="web_player.png" id="icon" height="70" width="70">
+        </div>
+     <div class="right">
+        <h12>Audio Web Player</h12><h14>2016</h14>
+        <br>
+         <div class="space"></div>
+         <h13> Open-source embedded music playlist</h13>
+        </div>
+      </div>  
+        </a>
+        
+<h3 style="font-weight: bold;">Toggle Functions</h3> 
+        <div class="bar">
+<div class="circle" id="red"></div>        
+ <div class="circle" id="yellow"></div>      
+    <div class="circle" id="green"></div>      
+</div>
+        
+        <div class="code-box">
+        <pre>
+  //Now Playing...
+    function firstSong() {
+        document.getElementById("current").innerHTML = "Now Playing...  #Song Name#";
+    }
+    function secondSong() {
+        document.getElementById("current").innerHTML = "Now Playing...  #Song Name#";
+    }
+     function thirdSong() {
+        document.getElementById("current").innerHTML = "Now Playing...  #Song Name#";
+    }
+     function fourthSong() {
+        document.getElementById("current").innerHTML = "Now Playing...  #Song Name#";
+    }
+    function fifthSong() {
+        document.getElementById("current").innerHTML = "Now Playing...  #Song Name#";
+    }
+   //control bar appear
+    var f = document.getElementById("#").style.visibility = "hidden";
+    
+    function showbar() {
+        document.getElementById("#").style.visibility = "visible";
+    }
+    function hidebar() {
+        document.getElementById("#").style.visibility = "hidden";
+    } 
+ //toggle change play/pause 
+    
+ var x = document.getElementById("#"); 
+  
+    function playSong() {
+        x.play();
+        y.pause();
+        z.pause();
+         u.pause();
+        v.pause();
+        x.currentTime = 0   
+}
+        </pre>
+        </div>
+        
+        
+    </div> <!-- ABOUT-->
+    
+  <div class="footer">
+    
+      <div class="links">
+      <a href="mailto:drafferty44@gmail.com">Email</a>
+          &middot;
+          <a href="https:/github.com">Github</a>
+          &middot;
+          <a href="https://udel.joinhandshake.com/login">Handshake</a>
+          &middot;
+          <a href="music.html" target="_blank">Music</a>
+      
+      </div>
+      <div class="copyright">&copy; Drew Rafferty 2019</div>
+ 
+    </div>
+</div> <!--CONTAINER-->
+    
+    
+</body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script>
+   $(document).ready(function(){
+	$('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+    
+
+    function myFunction() {
+  var x = document.getElementById("menu-list");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+</html>

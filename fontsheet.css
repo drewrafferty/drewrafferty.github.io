@@ -1,0 +1,21 @@
+ @font-face {
+            font-family: 'Dosis';
+            src: url(fonts/Dosis-Light.ttf);
+            font-style: normal;
+        }
+@font-face {
+            font-family: 'Muli';
+            src: url(fonts/Muli-Regular.ttf);
+            font-style: normal;
+    }
+@font-face {
+            font-family: 'Josefin Sans';
+            src: url(fonts/JosefinSans-Regular.ttf);
+            font-style: normal;
+    }
+
+@font-face {
+            font-family: 'Poppins';
+            src: url(fonts/Poppins-Regular.ttf);
+            font-style: normal;
+    }
